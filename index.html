@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Building a Resilient City</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- nav bar -->
+  <nav class="navbar">
+    <h1>🌱 Resilient City</h1>
+    <div class="nav-links">
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('map')">Interactive Map</button>
+      <button onclick="showSection('game')">Rebuild Game</button>
+    </div>
+  </nav>
+
+  <!-- home -->
+   <main>
+    <!-- ✅ HOME SECTION -->
+    <section id="home" class="page active">
+      <h2>Welcome</h2>
+      <p>This site explores how cities can recover and thrive through sustainable design.</p>
+
+      <!-- 🎨 DESIGNER PROFILES -->
+      <div class="team-section">
+        <h3>Meet the Team</h3>
+        <div class="team-cards">
+          <div class="card">
+            <img src="assets/afina.png" alt="Afina">
+            <h4>Afina</h4>
+            <p>Design & Storytelling</p>
+          </div>
+          <div class="card">
+            <img src="assets/colin.png" alt="Colin">
+            <h4>Colin</h4>
+            <p>Frontend Dev</p>
+          </div>
+          <div class="card">
+            <img src="assets/luke.png" alt="Luke">
+            <h4>Luke</h4>
+            <p>Game & Logic</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🌱 GREEN INFRASTRUCTURE OVERVIEW -->
+<section class="overview-section">
+  <h2>Green Urban Design Elements</h2>
+
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="assets/green-space.png" alt="Green Space">
+      <h3>Green Spaces</h3>
+      <p>Reduce heat & support biodiversity.</p>
+    </div>
+    <div class="slide">
+      <img src="assets/green-roof.png" alt="Green Roof">
+      <h3>Green Roofs</h3>
+      <p>Absorb rain, cool rooftops.</p>
+    </div>
+    <div class="slide">
+      <img src="assets/sponge-city.png" alt="Sponge City">
+      <h3>Sponge Cities</h3>
+      <p>Chinese design that soaks up rain.</p>
+    </div>
+    <div class="slide">
+      <img src="assets/street-trees.png" alt="Street Trees">
+      <h3>Street Trees</h3>
+      <p>Save lives, give shade.</p>
+    </div>
+    <div class="slide">
+      <img src="assets/bike-lane.png" alt="Bike Lane">
+      <h3>Bike Lanes</h3>
+      <p>Cut emissions & pay for themselves.</p>
+    </div>
+
+    <!-- Navigation arrows -->
+    <button class="prev" onclick="changeSlide(-1)">←</button>
+    <button class="next" onclick="changeSlide(1)">→</button>
+  </div>
+</section>
+
+      <!-- 💡 BRAINSTORM ZONE -->
+      <section class="brainstorm-section">
+        <h2>🌱 Brainstorm a Resilient Future</h2>
+        <p>A green and resilient city is not just about climate change.... It actually improves everyone's state of mind as well.</p>
+        <div class="ideas">
+          <button onclick="showIdea(0)">idk</button>
+          <button onclick="showIdea(1)">idk yet</button>
+          <button onclick="showIdea(2)">i still dk</button>
+        </div>
+        <div id="idea-box" class="idea-box">
+          <p id="idea-text">Click a button to reveal an idea.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- 🗺️ INTERACTIVE MAP SECTION -->
+    <section id="map" class="page">
+      <h2>Explore the Interactive Map</h2>
+      <img src="assets/city-map.png" alt="City Map" class="map-img">
+    </section>
+
+    <!-- 🎮 GAME SECTION -->
+    <section id="game" class="page">
+      <h2>Rebuild the City</h2>
+      <p>After the flood, use green infrastructure to rebuild smarter!</p>
+    </section>
+  </main>
+
+    <!-- map -->
+    <section id="map" class="page">
+      <h2>Explore the Interactive Map</h2>
+      <img src="assets/city-map.png"  alt="Interactive Pixel City Map" class="map-img">
+      <!--long horizontal pixel-art map is the png-->
+      <!-- Add hotspots or overlays here -->
+    </section>
+
+    <!-- game? -->
+    <section id="game" class="page">
+      <h2>Rebuild the City</h2>
+      <p>Drag and drop green infrastructure to restore the city after disaster strikes!</p>
+      <!-- Future rebuild game section -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Afina, Colin & Luke</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
