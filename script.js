@@ -25,12 +25,18 @@ function changeSlide(direction) {
 }
 
 // Brainstorm ideas
+const ideaNames = [
+  "Vegetable garden that utilizes water from your green roof",
+  "Timer incorporated into shower and faucets",
+  "Sun tracking shelf",
+];
 const ideas = [
-  "I don't know yet",
-  "no idea",
-  "idk"
+  "You can utilize existing design to make your home even more sustainable. Who doesn’t want to save water while enjoying home-grown vegetables at the same time. However, make sure the vegetables you grow are suitable for your local climate.",
+  "Did you know that you can save 75 gallons a month by just cutting your shower one minute shorter?",
+  "A rotating or adjustable indoor shelf (manual or solar-timed) that you turn throughout the day to follow the sunlight — perfect for growing herbs, drying dishes, or warming laundry naturally.",
 ];
 
 function showIdea(index) {
+  document.getElementById('idea-name').innerHTML = ideaNames[index];
   document.getElementById('idea-text').innerHTML = ideas[index];
 }

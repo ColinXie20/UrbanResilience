@@ -24,8 +24,8 @@
     <!-- ✅ HOME SECTION -->
     <section id="home" class="page active">
       <h2>Welcome</h2>
-      <p>This site explores how cities can recover and thrive through sustainable design.</p>
-
+      <p>This site explores existing sustainable design and proposes new designs that can be incorporated to ensure that cities can not just recover from natural disasters, but also thrive. We believe in creative solutions that stem from everyday life to live more sustainably. Through our interactive map, you can see our blueprint for a resilient city.</p>
+      <p>We hope this website can serve as inspiration for creative solutions and student action, and will be open sourcing all of our assets and code. Visit our Github <a href="https://github.com/ColinXie20/UrbanResilience" target="_blank">here</a>.</p>
       <!-- 🎨 DESIGNER PROFILES -->
       <div class="team-section">
         <h3>Meet the Team</h3>
@@ -33,7 +33,7 @@
           <div class="card">
             <img src="assets/afina.png" alt="Afina">
             <h4>Afina</h4>
-            <p>Design & Storytelling</p>
+            <p>Storytelling & Research</p>
           </div>
           <div class="card">
             <img src="assets/colin.png" alt="Colin">
@@ -43,7 +43,7 @@
           <div class="card">
             <img src="assets/luke.png" alt="Luke">
             <h4>Luke</h4>
-            <p>Game & Logic</p>
+            <p>Artwork & Design</p>
           </div>
         </div>
       </div>
@@ -54,29 +54,29 @@
 
   <div class="slideshow-container">
     <div class="slide active">
-      <img src="assets/green-space.png" alt="Green Space">
-      <h3>Green Spaces</h3>
-      <p>Reduce heat & support biodiversity.</p>
-    </div>
-    <div class="slide">
-      <img src="assets/green-roof.png" alt="Green Roof">
+      <img src="assets/green-roof.jpg" alt="Green Roof">
       <h3>Green Roofs</h3>
-      <p>Absorb rain, cool rooftops.</p>
+      <p>Roofs planted with local indigenous vegetation can reduce runoff and protect against flooding. They also encourage water infiltration and help to regulate surface temperatures, which saves money on cooling and heating.</p>
     </div>
     <div class="slide">
-      <img src="assets/sponge-city.png" alt="Sponge City">
-      <h3>Sponge Cities</h3>
-      <p>Chinese design that soaks up rain.</p>
+      <img src="assets/permeable-pavement.webp" alt="Permeable Pavement">
+      <h3>Permeable Pavements</h3>
+      <p>Using materials such as permeable concrete and permeable asphalt, pavements can slow down the flow of water and naturally infiltrate it to the groundwater. But we also need to take care of our city by cleaning these pavements before they are too clogged by debris!</p>
     </div>
     <div class="slide">
-      <img src="assets/street-trees.png" alt="Street Trees">
-      <h3>Street Trees</h3>
-      <p>Save lives, give shade.</p>
+      <img src="assets/urban-trees.webp" alt="Urban Trees">
+      <h3>Urban Trees</h3>
+      <p>These trees not just beautify our cities can also provide necessary shades when heat waves hit. According to Yale Climate Connections, they prevent one premature death for every 100 trees planted!</p>
     </div>
     <div class="slide">
-      <img src="assets/bike-lane.png" alt="Bike Lane">
+      <img src="assets/bike-lane.jpg" alt="Bike Lane">
       <h3>Bike Lanes</h3>
-      <p>Cut emissions & pay for themselves.</p>
+      <p>Bike lanes are essential for encouraging a low carbon lifestyle as they not only ensure safety for the bikers but also mitigate almost exactly the same amount of GHG emissions per year created by highway development when comparing dollar-for-dollar spending.</p>
+    </div>
+    <div class="slide">
+      <img src="assets/wildlife-crossing.webp" alt="Wildlife Crossing">
+      <h3>Wildlife Crossings</h3>
+      <p>Green bridges and tunnels can link fragmented habitats and ensure biodiversity and reduction in motor accidents, as fewer animals need to cross dangerous highways. These are essential for both human and animal safety as roadkill becomes a serious problem with more than a million animals killed every day.</p>
     </div>
 
     <!-- Navigation arrows -->
@@ -87,14 +87,15 @@
 
       <!-- 💡 BRAINSTORM ZONE -->
       <section class="brainstorm-section">
-        <h2>🌱 Brainstorm a Resilient Future</h2>
-        <p>A green and resilient city is not just about climate change.... It actually improves everyone's state of mind as well.</p>
+        <h2>What else can you do?</h2>
+        <p>A green and resilient city is not just about climate change.... It actually improves your quality of life as well.</p>
         <div class="ideas">
-          <button onclick="showIdea(0)">idk</button>
-          <button onclick="showIdea(1)">idk yet</button>
-          <button onclick="showIdea(2)">i still dk</button>
+          <button onclick="showIdea(0)">1</button>
+          <button onclick="showIdea(1)">2</button>
+          <button onclick="showIdea(2)">3</button>
         </div>
         <div id="idea-box" class="idea-box">
+          <h3 id="idea-name"></h3>
           <p id="idea-text">Click a button to reveal an idea.</p>
         </div>
       </section>
