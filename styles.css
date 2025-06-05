@@ -186,6 +186,13 @@ h2, h3, h4 {
   margin-top: 1rem;
 }
 
+/* Game Canvas */
+#gameCanvas {
+  width: 80%;
+  height: 80%;
+  border: 2px solid black;
+}
+
 /* Footer */
 footer {
   background-color: #c1e3d0;
