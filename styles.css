@@ -34,18 +34,19 @@ h2, h3, h4 {
 }
 
 .nav-links button {
-  background-color: #5f8f72;
+  background-color: #a6d3bb;
+  font-family: 'Press Start 2P', cursive;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
-  font-size: 0.6rem;
+  font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .nav-links button:hover {
-  background-color: #4a7e61;
+  color: grey;
 }
 /* nav end */
 
@@ -95,7 +96,7 @@ h2, h3, h4 {
 /* Overview Section */
 .slideshow-container {
   position: relative;
-  max-width: 500px;
+  max-width: 600px;
   height: 400px;
   margin: 2rem auto;
   padding: 1rem;
@@ -112,6 +113,8 @@ h2, h3, h4 {
 
 .slide.active {
   display: block;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .slide img {
@@ -126,21 +129,27 @@ h2, h3, h4 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #5f8f72;
-  color: white;
+  background-color: white;
+  color: #5f8f72;
   border: none;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
 }
 
+.prev:hover, .next:hover {
+  color: #355f4b;
+}
+
 .prev {
-  left: -2rem;
+  left: 0rem;
+  float: left;
 }
 
 .next {
-  right: -2rem;
+  right: 0rem;
+  float: right;
 }
 
 /* Brainstorm Zone */
