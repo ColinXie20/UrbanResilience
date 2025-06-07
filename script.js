@@ -3,8 +3,12 @@
 function showSection(id) {
   const pages = document.querySelectorAll('.page');
   pages.forEach(page => page.classList.remove('active'));
+  const navButtons = document.querySelectorAll('.navButton');
+  navButtons.forEach(navButton => navButton.classList.remove('active'));
   const activePage = document.getElementById(id);
   activePage.classList.add('active');
+  const activeButton = document.getElementById(id+"Button");
+  activeButton.classList.add('active');
 }
 //home page overview 
 let currentSlide = 0;

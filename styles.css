@@ -45,8 +45,12 @@ h2, h3, h4 {
   cursor: pointer;
 }
 
-.nav-links button:hover {
+.nav-links button.active {
   color: grey;
+}
+
+.nav-links button:hover {
+  color: lightgray;
 }
 /* nav end */
 
