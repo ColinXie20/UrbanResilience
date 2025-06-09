@@ -1,2 +1,2 @@
 # UrbanResilience
-Urban resilience website with infographics, an interactive map, and educational game
+Educational website about urban resilience with infographics and an interactive map.
