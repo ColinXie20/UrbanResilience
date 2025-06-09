@@ -44,3 +44,63 @@ function showIdea(index) {
   document.getElementById('idea-name').innerHTML = ideaNames[index];
   document.getElementById('idea-text').innerHTML = ideas[index];
 }
+
+// Interactive map stuff
+let imageWidth = 2500, imageHeight = 800;
+let curX = imageWidth/2, curY = imageHeight/2; // location of cat
+let screenWidth = 600, screenHeight = 600;
+let screenX = curX-screenWidth/2, screenY = curY-screenHeight/2; // top left corner
+const speed = 25;
+const canvas = document.getElementById("mapCanvas");
+const context = canvas.getContext("2d");
+let mapImg = new Image();
+mapImg.onload = function(){
+  context.drawImage(mapImg, screenX, screenY, screenWidth, screenHeight, 0, 0, 300, 150);
+}
+mapImg.src = "assets/map.png";
+/*
+let catImg = new Image();
+catImg.onload = function(){
+  context.drawImage(catImg, curX-screenX, curY-screenY);
+}
+catImg.src = "assets/cat.gif";
+*/
+//context.fillRect(curX-screenX-15, curY-screenY-15, 30, 30);
+document.getElementById("mapDebug").textContent = screenX+" "+screenY;
+
+document.addEventListener('keydown', function(event){
+  if (event.key == "w" || event.key == "W"){
+    if (curY > 0){
+      curY -= speed;
+    }
+    if (screenY > 0){
+      screenY -= speed;
+    }
+  }else if (event.key == "s" || event.key == "S"){
+    if (curY < imageHeight){
+      curY += speed;
+    }
+    if (screenY < imageHeight-screenHeight){
+      screenY += speed;
+    }
+  }else if (event.key == "a" || event.key == "A"){
+    if (curX > 0){
+      curX -= speed;
+    }
+    if (screenX > 0){
+      screenX -= speed;
+    }
+  }else if (event.key == "d" || event.key == "D"){
+    if (curX < imageWidth){
+      curX += speed;
+    }
+    if (screenX < imageWidth-screenWidth){
+      screenX += speed;
+    }
+  }
+  context.clearRect(0, 0, screenWidth, screenHeight);
+  context.drawImage(mapImg, screenX, screenY, screenWidth, screenHeight, 0, 0, 300, 150);
+  //context.drawImage(catImg, curX-screenX, curY-screenY);
+  //context.fillRect(curX-screenX-15, curY-screenY-15, 30, 30);
+  document.getElementById("mapDebug").textContent = screenX+" "+screenY;
+});
