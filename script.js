@@ -1,4 +1,3 @@
-// Add JavaScript code for your web site here and call it from index.html.
 // Page switching
 function showSection(id) {
   const pages = document.querySelectorAll('.page');
@@ -61,7 +60,6 @@ mapImg.onload = function(){
   context.drawImage(mapImg, screenX, screenY, screenWidth, screenHeight, 0, 0, 600, 600);
 }
 mapImg.src = "assets/map.png";
-document.getElementById("mapDebug").textContent = "X:"+screenX+" Y:"+screenY;
 
 let elements = [
   [0, 340, 122, 382, "Recycling Bins", "Recycling diverts waste from landfills, reducing both the environmental burden and energy consumption. Through recycling programs, cities can also prevent pollution and reduce emissions. This improves air quality and environmental sustainability."],
@@ -87,8 +85,8 @@ function checkHover(){
       return;
     }
   }
-  document.getElementById("elementName").textContent = "Hover over an element to learn more!";
-  document.getElementById("elementInfo").textContent = mouseX+" "+mouseY;
+  document.getElementById("elementName").textContent = "Hover your mouse over an element to learn more!";
+  document.getElementById("elementInfo").textContent = "-";
 }
 
 document.addEventListener('keydown', function(event){
@@ -116,7 +114,6 @@ document.addEventListener('keydown', function(event){
   context.clearRect(0, 0, screenWidth, screenHeight);
   context.drawImage(mapImg, screenX, screenY, screenWidth, screenHeight, 0, 0, 600, 600);
   checkHover();
-  document.getElementById("mapDebug").textContent = "X:"+screenX+" Y:"+screenY;
 });
 
 document.addEventListener('mousemove', function(event){
