@@ -201,11 +201,30 @@ h2, h3, h4 {
   margin-top: 1rem;
 }
 
+#mapContainer {
+  width: 1150px;
+}
+
 /* Map Canvas */
 #mapCanvas {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   border: 2px solid black;
+}
+
+#mapInstructions {
+  font-size: 0.83rem;
+}
+
+#mapInfoSection {
+  background-color: #d0f0dd;
+  padding: 20px;
+  border-radius: 12px;
+  width: 390px;
+  height: 564px;
+  float: right;
+  margin-right: 70px;
+  line-height: 1.6;
 }
 
 /* Footer */
